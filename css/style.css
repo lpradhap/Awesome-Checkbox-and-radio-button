@@ -1,0 +1,128 @@
+ul {
+  list-style: none;
+}
+body {
+  padding: 100px;
+}
+
+/* checkbox and radio buttion */
+label {
+  display: inline-block
+}
+
+label input[type="checkbox"] {
+  visibility: hidden;
+  margin: 0;
+  width: 0;
+  height: 0;
+  float: left
+}
+
+label input[type="checkbox"] + span {
+  background-image: url("../images/control-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -40px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -mozkit-apperance: none;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin: 0 10px 10px 0
+}
+
+label input[type="checkbox"] + span:hover {
+  background-position: 0 -80px
+}
+
+label input[type="checkbox"]:disabled + span {
+  background-position: 0px -60px
+}
+
+label input[type="checkbox"]:checked + span {
+  background-position: 0 0px
+}
+
+label input[type="checkbox"]:checked + span:hover {
+  background-position: 0 -20px
+}
+
+label input[type="radio"] {
+  visibility: hidden;
+  margin: 0;
+  width: 0;
+  height: 0;
+  float: left
+}
+
+label input[type="radio"] + span {
+  background-image: url("../images/control-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -22px -40px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -mozkit-apperance: none;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin: 0 10px 10px 0
+}
+
+label input[type="radio"]:disabled + span {
+  background-position: -22px -60px
+}
+
+label input[type="radio"]:checked + span {
+  background-position: -22px 0px
+}
+
+label input[type="radio"]:checked + span:hover {
+  background-position: -22px -20px
+}
+
+label:hover {
+  cursor: pointer
+}
+
+label:hover input[type="checkbox"] + span {
+  background-position: 0 -80px
+}
+
+label:hover input[type="checkbox"]:disabled + span {
+  background-position: 0px -60px
+}
+
+label:hover input[type="checkbox"]:checked + span {
+  background-position: 0 -20px
+}
+
+label:hover input[type="radio"] + span {
+  background-position: -22px -80px
+}
+
+label:hover input[type="radio"]:disabled + span {
+  background-position: -22px -60px
+}
+
+label:hover input[type="radio"]:checked + span {
+  background-position: -22px -20px
+}
+
+
+/* dropdown  */
+select {
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: solid 1px #cccccc;
+  border-radius: 0;
+  height: 34px;
+  cursor: pointer;
+  background: #fff;
+}
+select option {
+  padding: 10px;
+}

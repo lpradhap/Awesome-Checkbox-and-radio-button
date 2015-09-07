@@ -1,0 +1,105 @@
+label {
+  display: inline-block;
+
+  input[type="checkbox"] {
+    visibility: hidden;
+    margin: 0;
+    width: 0;
+    height: 0;
+    float: left;
+
+    & + span {
+      background-image: url('../images/control-sprite.png');
+      background-repeat: no-repeat;
+      background-position: 0  -40px;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -mozkit-apperance: none;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      float: left;
+      margin: 0 10px 10px 0;
+
+      &:hover {
+        background-position: 0  -80px;
+      }
+    }
+
+    &:disabled + span {
+      background-position: 0px -60px;
+    }
+
+    &:checked + span {
+      background-position: 0 0px;
+    }
+
+    &:checked + span:hover {
+      background-position: 0  -20px;
+    }
+
+  }
+
+  input[type="radio"] {
+    visibility: hidden;
+    margin: 0;
+    width: 0;
+    height: 0;
+    float: left;
+
+    & + span {
+      background-image: url('../images/control-sprite.png');
+      background-repeat: no-repeat;
+      background-position: -22px  -40px;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -mozkit-apperance: none;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      float: left;
+      margin: 0 10px 10px 0;
+    }
+
+    &:disabled + span {
+      background-position: -22px -60px;
+    }
+
+    &:checked + span {
+      background-position: -22px  0px;
+    }
+
+    &:checked + span:hover {
+      background-position: -22px  -20px;
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+    input[type="checkbox"] {
+      & + span {
+        background-position: 0  -80px;
+      }
+      &:disabled + span {
+        background-position: 0px -60px;
+      }
+
+      &:checked + span {
+        background-position: 0  -20px;
+      }
+
+    }
+    input[type="radio"] {
+      & + span {
+        background-position: -22px  -80px;
+      }
+      &:disabled + span {
+        background-position: -22px -60px;
+      }
+
+      &:checked + span {
+        background-position: -22px  -20px;
+      }
+    }
+  }
+}
