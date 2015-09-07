@@ -3,11 +3,13 @@
 100% CSS customised radiobutton and checkbox 
 
 1. creating checkbox
+<code>
 <label for="text-checkbox">
             <input type="checkbox" name="test-checkbox" id="text-checkbox" />
             <span></span>
             Sample Check box
 </label>
+</code>
 
 - the checkbox should be wrapped by a label with "for" tag including checkbox id
 - inside the label after the checkbox button, a empty span should included
