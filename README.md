@@ -9,11 +9,6 @@ DEMO: http://pradhap.com/demo/awesome-check-radio/
 - inside the label after the checkbox button, a empty span should included
 - you may just write the text inside the label, but after the span
 
-<label for="text-checkbox">
-    <input type="checkbox" name="test-checkbox" id="text-checkbox">
-    <span></span>
-    Sample Check box
-</label>
 
 
 2. creating radiobutton
@@ -21,8 +16,4 @@ DEMO: http://pradhap.com/demo/awesome-check-radio/
 - inside the label after the radiobutton button, a empty span should included
 - you may just write the text inside the label, but after the span
 
-<label for="test-radio1">
-     <input type="radio" name="test-radio" id="test-radio1">
-     <span></span>
-     Sample radio button
-</label>
+
